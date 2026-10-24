@@ -22,9 +22,9 @@
       })();
     </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/styles.css?v=2">
+    <link rel="stylesheet" href="/styles.css?v=3">
     <script src="/site.js" defer></script>
-    <script id="text-decode" src="/intro.js?v=1" data-duration="1000" defer></script>
+    <script id="text-decode" src="/intro.js?v=2" data-duration="1000" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -192,7 +192,13 @@
           </main>
         </div>
       </div>
-      <footer class="page-footer"><span>Hiram Vasquez / Tampa, FL</span><a href="#home">Back to top <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a></footer>
+      <footer class="page-footer">
+        <span>Hiram Vasquez / Tampa, FL</span>
+        <div class="footer-actions">
+          <button class="intro-replay" id="intro-replay" type="button" data-decode-skip hidden>Play intro</button>
+          <a href="#home">Back to top <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
