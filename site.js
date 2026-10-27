@@ -30,7 +30,7 @@
   const navigation = Array.from(document.querySelectorAll('.nav-link'));
   function updateNavigation() {
     const current = location.hash === '#about' ? '#about' :
-      ['#projects', '#infra-project', '#tfmobile-project', '#infra-notes'].includes(location.hash) ? '#projects' : '#home';
+      ['#projects', '#infra-project', '#tfmobile-project', '#infra-notes', '#attribution-project', '#attribution-notes'].includes(location.hash) ? '#projects' : '#home';
     navigation.forEach(link => {
       if (link.getAttribute('href') === current) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');

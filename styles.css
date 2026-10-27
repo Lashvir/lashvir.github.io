@@ -119,8 +119,9 @@ h1 { font-family: var(--serif); font-size: clamp(38px, 4.3vw, 60px); font-weight
 .section-heading h2 { font: inherit; font-weight: 600; }
 .section-heading > span { color: var(--muted); letter-spacing: .02em; }
 .section-heading .section-aside { font-size: 10px; letter-spacing: .01em; text-transform: none; }
-#projects, #about, #infra-project { scroll-margin-top: 26px; }
+#projects, #about, #infra-project, #attribution-project { scroll-margin-top: 26px; }
 .project-card { padding: 20px; border: 1px solid var(--line); background: var(--paper); min-width: 0; }
+.projects-section > .project-card + .project-card { margin-top: 13px; }
 .project-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; }
 .folder-icon { width: 21px; height: 21px; color: var(--accent); margin-right: 1px; }
 .project-number { font: 11px/1 var(--mono); color: var(--muted); margin-right: 1px; }

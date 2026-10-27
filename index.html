@@ -22,9 +22,9 @@
       })();
     </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/styles.css?v=3">
-    <script src="/site.js" defer></script>
-    <script id="text-decode" src="/intro.js?v=2" data-duration="1000" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=4">
+    <script src="/site.js?v=2" defer></script>
+    <script id="text-decode" src="/intro.js?v=3" data-duration="2000" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -65,7 +65,7 @@
               </a>
               <nav class="navigation" aria-label="Main">
                 <a href="#home" class="nav-link" aria-current="location">Home</a>
-                <a href="#projects" class="nav-link">Projects <span aria-hidden="true">03</span></a>
+                <a href="#projects" class="nav-link">Projects <span aria-hidden="true">04</span></a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="https://github.com/Lashvir" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
               </nav>
@@ -93,7 +93,7 @@
             </a>
 
             <section class="projects-section" id="projects" aria-labelledby="projects-title">
-              <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span aria-hidden="true">/ 03</span></div>
+              <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span aria-hidden="true">/ 04</span></div>
 
               <article class="project-card featured" id="tfmobile-project">
                 <div class="project-heading">
@@ -133,18 +133,41 @@
                 </div>
               </article>
 
+              <article class="project-card" id="attribution-project">
+                <div class="project-heading">
+                  <svg class="icon folder-icon" aria-hidden="true"><use href="#i-folder"/></svg>
+                  <span class="project-number">02</span><h3>AttributionField</h3>
+                  <span class="badge badge-progress">Web app</span>
+                </div>
+                <div class="compact-project-copy">
+                  <p>A small storefront and attribution dashboard that connects traffic sources, browsing sessions, and simulated purchases.</p>
+                  <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>SQLite</li><li>JavaScript</li></ul>
+                  <div class="project-links">
+                    <a class="text-link" href="https://github.com/Lashvir/AttributionField" target="_blank" rel="noopener noreferrer" aria-label="View AttributionField on GitHub">GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                  </div>
+                  <details class="project-details" id="attribution-notes">
+                    <summary>Project notes <span class="details-sign" aria-hidden="true">+</span></summary>
+                    <div class="project-notes"><p>Tracks page views and multi-product checkouts, prevents duplicate writes when requests are retried, and reports conversion metrics by source and product.</p></div>
+                  </details>
+                </div>
+              </article>
+
               <div class="project-grid">
                 <article class="project-card" id="infra-project">
                   <div class="project-heading">
                     <svg class="icon folder-icon" aria-hidden="true"><use href="#i-folder"/></svg>
-                    <span class="project-number">02</span><h3>InfraMonitoring</h3>
+                    <span class="project-number">03</span><h3>InfraMonitoring</h3>
                   </div>
                   <div class="compact-project-copy">
                     <span class="badge badge-progress">In progress</span>
-                    <p>Personal PC monitoring, with a bigger infrastructure project in mind.</p>
+                    <p>A machine-monitoring backend with CPU metrics stored in PostgreSQL. Starting with my own PC and building toward a larger infrastructure project.</p>
+                    <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>PostgreSQL</li><li>psutil</li><li>Docker</li></ul>
+                    <div class="project-links">
+                      <a class="text-link" href="https://github.com/Lashvir/InfraMonitoring" target="_blank" rel="noopener noreferrer" aria-label="View InfraMonitoring on GitHub">GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                    </div>
                     <details class="project-details" id="infra-notes">
                       <summary>Build notes <span class="details-sign" aria-hidden="true">+</span></summary>
-                      <div class="project-notes"><p>Starting with CPU data from my own PC using Python, psutil, and FastAPI. The next step is storing metrics in PostgreSQL and expanding to machine health and incidents.</p></div>
+                      <div class="project-notes"><p>FastAPI endpoints register machines, store CPU usage readings, and fetch the latest metric for each machine. The repository also includes a psutil collector and Docker Compose for local PostgreSQL. Data collection and machine-health features are still in development.</p></div>
                     </details>
                   </div>
                 </article>
@@ -152,7 +175,7 @@
                 <article class="project-card">
                   <div class="project-heading">
                     <svg class="icon folder-icon" aria-hidden="true"><use href="#i-folder"/></svg>
-                    <span class="project-number">03</span><h3>Bullet Heaven</h3>
+                    <span class="project-number">04</span><h3>Bullet Heaven</h3>
                   </div>
                   <div class="compact-project-copy">
                     <p>A collaborative Unity game. Gameplay systems, automated testing, and logging.</p>

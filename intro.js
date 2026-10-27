@@ -3,7 +3,7 @@
   const root = document.documentElement;
   const config = document.getElementById('text-decode');
   const replay = document.getElementById('intro-replay');
-  const duration = Math.max(300, Math.min(6000, Number(config?.dataset.duration) || 1000));
+  const duration = Math.max(300, Math.min(6000, Number(config?.dataset.duration) || 2000));
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   let active = null;
@@ -12,7 +12,7 @@
   let automaticPending = true;
   let hasPlayed = false;
 
-  root.dataset.decodeVersion = '2';
+  root.dataset.decodeVersion = '3';
   root.dataset.decodeFrames = '0';
 
   function status(state, reason = state) {
